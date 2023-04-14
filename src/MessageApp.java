@@ -10,6 +10,7 @@ public class MessageApp {
         System.out.println("よろしくお願いいたします");
 
         Drink drink1; // (大体)自動でインポートされる ↑
+        // パッケージが違うとつかう先でインポートする必要がある(python と似てる)
     }
     // Shift + Alt + F でインデントを揃えてきれいにする (フォーマット)
 }
