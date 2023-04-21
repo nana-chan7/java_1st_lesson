@@ -50,5 +50,26 @@ public class ItemCalculate {
         // int totalPrice = price * amount;
         System.out.println(totalPrice);
 
+
+        // 論理演算
+        boolean is_match = false;
+        price = 100;
+
+        // price は 100 と等しいですか？
+        is_match = (price == 100);
+        System.out.println(is_match); 
+
+        // price は 100 より小さいですか？
+        is_match = (price < 100);
+        System.out.println(is_match); 
+
+        // price は 100 より大きいですか？
+        is_match = (price > 100);
+        System.out.println(is_match); 
+
+        // price は 100 と等しくないですか？
+        is_match = (price != 100);
+        System.out.println(is_match); 
+        
     }
 }

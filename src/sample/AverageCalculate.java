@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class AverageCalculate{
 
+    // 標準入力
     public static void main(String[] args){
         System.out.println("平均点の計算");
     
@@ -27,6 +28,7 @@ public class AverageCalculate{
 
         String message = "平均点は" + average + "です。";
         System.out.println(message);
+
     }
     
 }
