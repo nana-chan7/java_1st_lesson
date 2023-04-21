@@ -99,6 +99,18 @@ public class ItemCalculate {
         is_match = (Integer.parseInt(str1) == number1);
         System.out.println(is_match);
 
+        // ※ Python, PHP, JavaScript 
+        // is_match = (str1 === number1);
+
+        // 三項演算
+        System.out.println("----- 三項演算 ---");
+        // 商品価格
+        price = 150;
+        // 所持金
+        int money = 200;
+
+        String message = (price <= money) ? "購入できます。" : "所持金が足りません。";
+        System.out.println(message);
 
     }
 }
