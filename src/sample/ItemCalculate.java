@@ -34,11 +34,18 @@ public class ItemCalculate {
         amount++;   // → 結果 : 7
         System.out.println(amount);
 
+        // デクリメント(decrement)
         // 1 ずつ減算 
         amount--;   // → 結果 : 6
         amount--;   // → 結果 : 5
         System.out.println(amount);
 
+        // over flow
+        // int price = 10000;
+        price = 100000;
+        amount = 100000;
 
+        int totalPrice = price * amount;
+        System.out.println(totalPrice);
     }
 }
