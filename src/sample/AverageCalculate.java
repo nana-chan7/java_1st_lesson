@@ -21,6 +21,12 @@ public class AverageCalculate{
         System.err.println("社会の点数を入力してください");
         int society = sc.nextInt();
 
+        // 平均点(average)
+        // 整数.0f
+        float average = (japanese + mathmatic + science + society) / 4.0f;
+
+        String message = "平均点は" + average + "です。";
+        System.out.println(message);
     }
     
 }

@@ -44,11 +44,11 @@ public class ItemCalculate {
         // int price = 10000;
         price = 100000;
         amount = 100000;
-        long totalPrice = (long)price * (longd)amount;
+        // long型にキャスト
+        long totalPrice = (long) price * (long) amount;
  
         // int totalPrice = price * amount;
         System.out.println(totalPrice);
 
-        
     }
 }
