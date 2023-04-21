@@ -17,7 +17,28 @@ public class ItemCalculate {
         answer -= 2;
         answer *= 5;
         answer /= 2;
-
         System.out.println(answer);
+
+        // cast
+        int price = 200;
+        float pointRate = 0.1f;
+        int point;
+
+        point = (int) (price * pointRate);  // 小数点で切り捨てられている？
+        System.out.println(point + "pt");
+
+        int amount = 5;
+        // インクリメント(increment)
+        // 1 ずつ加算
+        amount++;   // → 結果 : 6
+        amount++;   // → 結果 : 7
+        System.out.println(amount);
+
+        // 1 ずつ減算 
+        amount--;   // → 結果 : 6
+        amount--;   // → 結果 : 5
+        System.out.println(amount);
+
+
     }
 }

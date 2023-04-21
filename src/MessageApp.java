@@ -1,4 +1,4 @@
-import item.Drink;
+// import item.Drink;
 
 public class MessageApp {
 
@@ -11,7 +11,7 @@ public class MessageApp {
 
         // 外部クラス
         // クラス名を入力すると(大体)自動でインポートされる ↑
-        Drink drink1; 
+        // Drink drink1; 
         // パッケージが違うとつかう先でインポートする必要がある(python と似てる)
     }
     // Shift + Alt + F でインデントを揃えてきれいにする (フォーマット)
