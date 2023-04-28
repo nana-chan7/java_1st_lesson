@@ -1,5 +1,8 @@
 package sample;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 public class Drink {
     
     public static void main(String[] args) {
@@ -35,6 +38,15 @@ public class Drink {
 
         // 定数は値を再代入できない
         // TAX_RATE = 0.08f;
+
+        System.out.println("--------Array-------");
+        // Array
+        String[] drinks = {"コーヒー", "紅茶", "ほうじ茶"};
+        System.out.println(drinks); // ← これだと配列の中身はちゃんと表示できない
+        System.out.println(Arrays.toString(drinks));
+
+        // Python, JavaScript, PHP
+        // drinks = ["コーヒー", "紅茶", "ほうじ茶"];
 
     }
 }
