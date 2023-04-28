@@ -40,8 +40,21 @@ public class Condition {
             message = "所持金が足りません。";
         }
 
-
-
         System.out.println(message);
+
+
+        // switch 文    
+        String dayString = "月";
+        String garbage = "";
+        switch (dayString) {
+            case "月":
+                garbage = "燃えるゴミ";
+                break;
+        
+            default:
+                break;
+        }
+        System.out.println(garbage);
+
     }
 }
