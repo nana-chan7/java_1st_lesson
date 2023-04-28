@@ -8,10 +8,21 @@ public class RpsGame {
         final int PAPER = 2;
         int playerHand;
         int pcHand;
-        int result;
+        int result = 0;
         String message = "";
 
+        // じゃんけんの結果
+        // if else statement
+        if (result == 0) {
+            message = "Draw!";
+        } 
+        else if (result == 1){
+            message = "You Lose...";
+        }else{
+            message = "You Win!!";
+        }
         
+        System.out.println(message);
 
     }
 }
