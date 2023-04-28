@@ -28,7 +28,8 @@ public class Condition {
         // if (price <= 0){
         //     message = "価格が正しくありません。";
         // }
-        // OR 論理演算子追加
+        // 論理演算子追加
+        // OR : || (どちらかが true だったら)
         if (price <= 0 || price >= maxPrice){
             message = "価格が正しくありません。";
         }
