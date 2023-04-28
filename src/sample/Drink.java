@@ -43,10 +43,15 @@ public class Drink {
         // Array
         String[] drinks = {"コーヒー", "紅茶", "ほうじ茶"};
         System.out.println(drinks); // ← これだと配列の中身はちゃんと表示できない
-        System.out.println(Arrays.toString(drinks));
+        System.out.println(Arrays.toString(drinks)); 
+        // Calender, Arraysは自動インポートされて使える(自動で行われない時があるので注意)
 
         // Python, JavaScript, PHP
         // drinks = ["コーヒー", "紅茶", "ほうじ茶"];
 
+        // 紅茶を取り出すためには
+        // 2番目の値を取り出す
+        String selectDrink = drinks[1];
+        System.out.println(selectDrink);
     }
 }
