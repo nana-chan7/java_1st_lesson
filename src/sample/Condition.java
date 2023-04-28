@@ -4,7 +4,9 @@ package sample;
 public class Condition {
     public static void main(String[] args) {
         // 価格
-        int price = -200;
+        int price = 100;
+        // 最大価格
+        int maxPrice = 100000000;
         // 所持金
         int money = 100;
         // メッセージ
@@ -23,7 +25,11 @@ public class Condition {
         //     message = "所持金が足りません。";
         // }
 
-        if (price <= 0){
+        // if (price <= 0){
+        //     message = "価格が正しくありません。";
+        // }
+        // OR 論理演算子追加
+        if (price <= 0 || price >= maxPrice){
             message = "価格が正しくありません。";
         }
         else if (money >= price){
@@ -32,6 +38,7 @@ public class Condition {
         else {
             message = "所持金が足りません。";
         }
+
 
 
         System.out.println(message);
