@@ -44,7 +44,9 @@ public class Drink {
         String[] drinks = {"コーヒー", "紅茶", "ほうじ茶"};
         System.out.println(drinks); // ← これだと配列の中身はちゃんと表示できない
         System.out.println(Arrays.toString(drinks)); 
-        // Calender, Arraysは自動インポートされて使える(自動で行われない時があるので注意)
+        // Calender, Arrays 等は自動インポートされて使える
+        // ※ 自動で行われない時があるので注意 
+        // ↑ クイックフィックス(Ctrl + ,)で import ~ を選択
 
         // Python, JavaScript, PHP
         // drinks = ["コーヒー", "紅茶", "ほうじ茶"];
@@ -53,5 +55,20 @@ public class Drink {
         // 2番目の値を取り出す
         String selectDrink = drinks[1];
         System.out.println(selectDrink);
+
+        // 配列の 2番目の要素を変える
+        drinks[1] = "ウーロン茶";
+        System.out.println(Arrays.toString(drinks)); 
+
+        // 要素数で初期化
+        // Array : imutable
+        int[] numbers = new int[3]; //要素を 3個までしか入れられない配列を作成
+        numbers[0] = 50;
+        numbers[1] = 70;
+        numbers[2] = 80;
+        // numbers[3] = 90;  // 指定された要素数を超えるとエラー
+        numbers[0] = 90;  // 中身を変えることは可能
+        System.out.println(Arrays.toString(numbers));
+
     }
 }
