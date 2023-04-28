@@ -1,5 +1,7 @@
 package sample;
 
+import java.util.Calendar;
+
 // 条件分岐
 public class Condition {
     public static void main(String[] args) {
@@ -46,6 +48,11 @@ public class Condition {
         // switch 文 
         // 予測の右側にある Switch Statement を選択  
         String dayString = "金";
+        // カレンダー機能
+        Calendar cal = Calendar.getInstance();
+        int weekIndex = cal.get(Calendar.DAY_OF_WEEK);
+        System.out.println(weekIndex);
+        
         String garbage = "";
         switch (dayString) {
             // 同じ処理をしたい case は複数でもよい

@@ -18,3 +18,6 @@ switch 切り替え
 case ～の場合
 break 休み
 default 初期
+
+calender 機能
+日曜始まり (番号 : 1 ～)
