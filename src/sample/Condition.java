@@ -43,12 +43,16 @@ public class Condition {
         System.out.println(message);
 
 
-        // switch 文    
-        String dayString = "日";
+        // switch 文 
+        // 予測の右側にある Switch Statement を選択  
+        String dayString = "金";
         String garbage = "";
         switch (dayString) {
+            // 同じ処理をしたい case は複数でもよい
             case "月":
+            case "金":
                 garbage = "燃えるゴミ";
+                // ↓ break がないと処理がおかしくなる
                 break;
 
             case "水":
