@@ -1,6 +1,5 @@
 package sample;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class Drink {
@@ -69,6 +68,8 @@ public class Drink {
         // numbers[3] = 90;  // 指定された要素数を超えるとエラー
         numbers[0] = 90;  // 中身を変えることは可能
         System.out.println(Arrays.toString(numbers));
+
+        // ※ 上の driks配列もはじめに 3個の要素で作成しているので追加はできない
 
     }
 }
