@@ -44,14 +44,19 @@ public class Condition {
 
 
         // switch 文    
-        String dayString = "月";
+        String dayString = "日";
         String garbage = "";
         switch (dayString) {
             case "月":
                 garbage = "燃えるゴミ";
                 break;
-        
-            default:
+
+            case "水":
+                garbage = "燃えないゴミ";
+                break;
+
+            default: 
+                garbage = "回収なし";
                 break;
         }
         System.out.println(garbage);

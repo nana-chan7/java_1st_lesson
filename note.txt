@@ -14,3 +14,7 @@ if文 を繰り返す
 
 ・switch文
 if文のように条件分岐できる
+switch 切り替え
+case ～の場合
+break 休み
+default 初期
