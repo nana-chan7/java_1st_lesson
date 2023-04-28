@@ -10,10 +10,12 @@ public class ItemRepeat {
         }
 
         // forのネスト
-        for (int i = 1; i < 10; i++) {
-            for (int j = 1; j < 10; j++) {
+        for (int i = 1; i <= 10; i++) {
+            for (int j = 1; j <= 10; j++) {
                 String plot = "(" + i + "," + j + ")";
-                System.out.println(plot);
+                System.out.println(plot);  
+                //println : ln ← 改行コード
+                // print だと改行なしで出力
             }
         }
     }
