@@ -43,4 +43,17 @@ public class Method {
         int totalPrice = price * amount;
         return totalPrice;
     }
+
+    // ------- オーバーロード -------
+    public static void greet(String name) {
+        String message = name + "さん、こんにちは";
+        System.out.println(message);        
+    }
+    // ↓ 上の処理をコピーしたままだとエラーになるが、
+    // 数の数が異なっているか、引数のデータ型が異なっていると実行できるようしなる
+    // ※ 引数の変数名だけが異なる場合・戻り値だけが異なる場合 はオーバーロードできない
+    public static void greet(String name, String weather) {
+        String message = name + "さん、こんにちは" + "今日は" + weather + "ですね";
+        System.out.println(message);        
+    }
 }
