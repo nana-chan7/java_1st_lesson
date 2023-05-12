@@ -1,5 +1,6 @@
-package sample;
 // 2023-05-12 week4
+package sample;
+
 public class Method {
     
     public static void main(String[] args) {
