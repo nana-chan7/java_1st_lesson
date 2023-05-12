@@ -16,8 +16,21 @@ public class Method {
         // answer = calculate2(10.f);
 
         System.out.println(">>> 合計額を求める");
-        int totalPrice = calculateTotalPlise(200, 5);
+        int totalPrice = calculateTotalPrise(200, 5);
         System.out.println(totalPrice);
+
+        // System.out.println(">>> 購入額を求める");
+        // int totalPrice = calculateTotalPrise(200, 5, 0.1f);
+        // System.out.println(totalPrice);
+        // int purchasePrice = calculateTotalPrise(200, 5, 0.1f);
+        // System.out.println(purchasePrice);
+
+
+        System.out.println("--------オーバーロード--------");
+        // 引数の数で自動的にメソッドを判別する
+        // ※ メソッド名が同じで混乱することもあるのでケースバイケース
+        greet("YSE");
+        greet("YSE", "晴れ");
     }
 
     // public static method  
@@ -39,10 +52,23 @@ public class Method {
     //     return y;
     // }
 
-    public static int calculateTotalPlise(int price, int amount){
+    // 商品の合計額
+    public static int calculateTotalPrise(int price, int amount){
         int totalPrice = price * amount;
         return totalPrice;
     }
+    // 商品の購入額
+    public static int calculateTotalPrise(int price, int amount, float taxRate){
+        float totalPrice = price * amount * (1 + taxRate);
+        return (int) totalPrice;
+    }
+    // ※Float などの頭が大文字(参照型)の場合は .intValue() を付けて参照型に統一するとできる
+    // 頭が小文字(floatなど) はプリミティブ型
+    // public static int calculateTotalPrise(int price, int amount, Float taxRate){
+    //     Float totalPrice = price * amount * (1 + taxRate);
+    //     return totalPrice.intValue();
+    }
+
 
     // ------- オーバーロード -------
     public static void greet(String name) {
