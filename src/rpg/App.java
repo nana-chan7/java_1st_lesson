@@ -23,9 +23,22 @@ public class App {
         System.out.println(wizard.hp);
 
         System.out.println("-----------------");
-        
+
         System.out.println(worrior.name);
         System.out.println(worrior.job);
+        System.out.println(worrior.hp);
+
+        System.out.println("-----------------");
+
+        wizard.walk("left");
+        wizard.talk(worrior, "勝負しよう！");
+
+        System.out.println("-----------------");
+
+        wizard.attack(worrior);
+        worrior.attack(wizard);
+
+        System.out.println(wizard.hp);
         System.out.println(worrior.hp);
     }
 }
