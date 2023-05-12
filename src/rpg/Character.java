@@ -1,12 +1,12 @@
-// 2023-05-12 week4
+// 2023-05-12 week5
 package rpg;
 
 public class Character {
 
     // field (property)
-    String name;
-    String job;
-    int hp;
+    public String name;
+    public String job;
+    public int hp;
     
     // class-method
     // ※ pub → public_method を選択
@@ -20,7 +20,7 @@ public class Character {
         message = character.name + "!" + message;
         System.out.println(message);
     }
-    
+
     public void attack(Character character) {
         int damage = 5;
         character.hp -= damage;
