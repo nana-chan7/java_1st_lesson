@@ -19,6 +19,11 @@ public class Character {
     public String name;
     public String job;
     public int hp;
+    public int mp;
+    public int lrevel;
+    public int exp;
+    public int attackPower;
+    public int defencePower;
     
     // class-method
     // ※ pub → public_method を選択
