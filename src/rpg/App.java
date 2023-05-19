@@ -8,16 +8,16 @@ public class App {
 
         // Character wizard = new Character();
         Character wizard = new Character("アリス", "Wizard");
-        Character worrior = new Character("ボブ", "Worrior");
+        Character warrior = new Character("ボブ", "Warrior");
 
         // wizard.name = "アリス";
         // wizard.job = "Wizard";
         // wizard.hp = 30;
 
-        // Character worrior = new Character();
-        // worrior.name = "ボブ";
-        // worrior.job = "Worrior";
-        // worrior.hp = 50;
+        // Character warrior = new Character();
+        // warrior.name = "ボブ";
+        // warrior.job = "Warrior";
+        // warrior.hp = 50;
 
         System.out.println(wizard.name);
         System.out.println(wizard.job);
@@ -25,21 +25,21 @@ public class App {
 
         System.out.println("-----------------");
 
-        System.out.println(worrior.name);
-        System.out.println(worrior.job);
-        System.out.println(worrior.hp);
+        System.out.println(warrior.name);
+        System.out.println(warrior.job);
+        System.out.println(warrior.hp);
 
         System.out.println("-----------------");
 
         wizard.walk("left");
-        wizard.talk(worrior, "勝負しよう！");
+        wizard.talk(warrior, "勝負しよう！");
 
         System.out.println("-----------------");
 
-        wizard.attack(worrior);
-        worrior.attack(wizard);
+        wizard.attack(warrior);
+        warrior.attack(wizard);
 
         System.out.println(wizard.hp);
-        System.out.println(worrior.hp);
+        System.out.println(warrior.hp);
     }
 }

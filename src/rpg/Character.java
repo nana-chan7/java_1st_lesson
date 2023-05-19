@@ -10,6 +10,14 @@ public class Character {
         this.hp = 50;
     }
 
+    // マウス右クリック → ソースアクション → enerateConstruct
+    public Character(String name) {
+        this.name = name;
+        this.lrevel = 1;
+        this.exp = 0;
+    }
+
+
     // 初期化ブロック
     {
         System.out.println("初期化ブロック");
