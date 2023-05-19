@@ -56,3 +56,26 @@ pythonにもあったやつ
 
 ・アノテーション
 メソッドやプロパティ定義の前に @(アットマーク) で記述する記法
+
+・イミュータブル (immutable)
+Array型のように配列の値を追加、削除ができない
+データの数を変えられない ← 値の更新はできる
+不変データ
+
+・ミュータブル
+可変データ
+
+・リスト (List)
+java.util.List
+順序通りに並ぶ
+Listは index(要素番号)で指定したコレクション
+List<データ型> 変数名;
+Arrays.asList() で初期化
+
+・ArrayList / k
+Listを拡張したクラス
+ArrayList<データ型> 変数名
+
+Set
+Queue
+Deque
