@@ -31,5 +31,3 @@ public class Animal {
         System.out.println(message);
     }
 }
-    
-

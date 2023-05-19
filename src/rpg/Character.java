@@ -1,4 +1,5 @@
 // 2023-05-12 week5
+// 2023-05-19 week6
 package rpg;
 
 public class Character {
@@ -56,4 +57,3 @@ public class Character {
         if(damage > 0) monster.hp -= damage;
     }
 }
-
