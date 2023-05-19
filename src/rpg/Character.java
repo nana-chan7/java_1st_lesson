@@ -3,6 +3,13 @@ package rpg;
 
 public class Character {
 
+    // constructer
+    public Character(String name, String job) {
+        this.name = name;
+        this.job = job;
+        this.hp = 50;
+    }
+
     // field (property)
     public String name;
     public String job;
@@ -17,7 +24,7 @@ public class Character {
     }
 
     public void talk(Character character, String message) {
-        message = character.name + "!" + message;
+        message = character.name + "! " + message;
         System.out.println(message);
     }
 

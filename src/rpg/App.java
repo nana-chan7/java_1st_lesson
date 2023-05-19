@@ -6,17 +6,18 @@ public class App {
         // ↓ rpgパッケージの Character を選択
         // Character character = new Character();
 
-        Character wizard = new Character();
-        System.out.println(wizard);
+        // Character wizard = new Character();
+        Character wizard = new Character("アリス", "Wizard");
+        Character worrior = new Character("ボブ", "Worrior");
 
-        wizard.name = "アリス";
-        wizard.job = "Wizard";
-        wizard.hp = 30;
+        // wizard.name = "アリス";
+        // wizard.job = "Wizard";
+        // wizard.hp = 30;
 
-        Character worrior = new Character();
-        worrior.name = "ボブ";
-        worrior.job = "Worrior";
-        worrior.hp = 50;
+        // Character worrior = new Character();
+        // worrior.name = "ボブ";
+        // worrior.job = "Worrior";
+        // worrior.hp = 50;
 
         System.out.println(wizard.name);
         System.out.println(wizard.job);
