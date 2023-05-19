@@ -1,3 +1,4 @@
+// 2023-05-19 week6
 package rpg;
 
 public class Monster {
