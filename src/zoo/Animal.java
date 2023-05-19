@@ -3,20 +3,20 @@ package zoo;
 
 public class Animal {
 
-    // constructer
+    // constructer : コンストラクタ
     public Animal(String name) {
         this.name = name;
     }
-    
+
     public Animal() {
     }
 
-    // property
+    // property : プロパティ
     public String type;
     public String name;
     public String crying;
 
-    // method
+    // method : メソッド
     public void walk() {
         String message = this.name + "が歩いた";
         System.out.println(message);
