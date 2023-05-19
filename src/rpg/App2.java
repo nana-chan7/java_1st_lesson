@@ -6,5 +6,7 @@ public class App2 {
         Wizard wizard = new Wizard("アリス");
         Warrior warrior = new Warrior("ボブ");
         wizard.talk(warrior, "こんにちは");
+
+        
     }
 }
