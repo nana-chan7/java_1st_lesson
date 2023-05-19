@@ -10,4 +10,11 @@ public class Warrior extends Character{
         this.attackPower = 7;
         this.defencePower = 3;
     }
+
+    // オーバーライド
+    @Override
+    public void attack(Monster monster) {
+        System.out.println("オーバーライド");
+        
+    }
 }
