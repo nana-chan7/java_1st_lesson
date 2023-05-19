@@ -8,6 +8,7 @@ public class Animal {
         this.name = name;
     }
 
+    // AnimalApp で空の new Animal() を実行するため
     public Animal() {
     }
 
