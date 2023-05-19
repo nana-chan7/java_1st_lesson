@@ -10,5 +10,4 @@ public class Wizard extends Character{
         this.attackPower = 3;
         this.defencePower = 2;
     }
-           
 }
