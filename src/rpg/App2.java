@@ -7,6 +7,11 @@ public class App2 {
         Warrior warrior = new Warrior("ボブ");
         wizard.talk(warrior, "こんにちは");
 
-        
+        Monster monster1 = new Monster();
+        wizard.attack(monster1);
+        warrior.attack(monster1);
+        System.out.println(monster1.hp);
+        monster1.attack(wizard);
+        System.out.println(wizard.hp);
     }
 }
