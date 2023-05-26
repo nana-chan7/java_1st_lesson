@@ -1,5 +1,9 @@
+// 2023-05-26
 package sns;
 
-public class PrimeUser {
-    
+import sns.entity.User;
+public class PrimeUser extends User{
+    public void shoeEmail() {
+        System.out.println(this.email);
+    }
 }
