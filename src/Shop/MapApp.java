@@ -16,5 +16,9 @@ public class MapApp {
         // データ取得
         String drinkName = drinkMap.get("D0003");
         System.out.println(drinkName);
+
+        // データ個数
+        int drinkCount = drinkMap.size();
+        System.out.println(drinkCount);
     }
 }
