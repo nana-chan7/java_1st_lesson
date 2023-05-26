@@ -1,12 +1,13 @@
 // 2023-05-12 week5
 // 2023-05-19 week6
+// 2023-05-26 week7
 package rpg;
 
 // public class Character {
 
-public class Character extends CharacterAbstract {
-
-    // constructer
+// public class Character extends CharacterAbstract {
+public class Character implements ICharacter {
+        // constructer
     public Character(String name, String job) {
         this.name = name;
         this.job = job;
@@ -65,11 +66,25 @@ public class Character extends CharacterAbstract {
         if(damage > 0) monster.hp -= damage;
     }
 
-    // abstract
+    // interface
     @Override
     public boolean isAlive() {
         // TODO Auto-generated method stub
-        //throw new UnsupportedOperationException("Unimplemented method 'isAlive'");
+        // throw new UnsupportedOperationException("Unimplemented method 'isAlive'");
         return (this.hp > 0);
     }
+
+    @Override
+    public void magic(Monster monster, String key) {
+        // TODO Auto-generated method stub
+        //throw new UnsupportedOperationException("Unimplemented method 'magic'");
+    }
+
+    // abstract
+    // @Override
+    // public boolean isAlive() {
+    //     // TODO Auto-generated method stub
+    //     //throw new UnsupportedOperationException("Unimplemented method 'isAlive'");
+    //     return (this.hp > 0);
+    // }
 }

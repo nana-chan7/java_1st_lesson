@@ -103,3 +103,8 @@ public サブクラス extends 抽象クラス{
 }
 
 inherited : 実装
+
+・インターフェース
+public サブクラス implements クラス名1, クラス名2{
+    
+}

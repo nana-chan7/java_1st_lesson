@@ -1,4 +1,4 @@
-// 2023-05-19
+// 2023-05-19 week6
 // 2023-05-26 week7
 package shop;
 import java.util.ArrayList;
