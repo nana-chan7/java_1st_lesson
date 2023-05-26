@@ -86,3 +86,18 @@ ArrayList<データ型> 変数名
 Set
 Queue
 Deque
+
+2023-05-26 week7
+getter
+setter
+
+・抽象クラス
+
+・abstractメソッド
+抽象メソッドはクラス名の前に abstract を付け、実装はせず(処理を書かず)に宣言
+public abstract メソッド名();
+
+・抽象クラスの継承
+public サブクラス extends 抽象クラス{
+
+}

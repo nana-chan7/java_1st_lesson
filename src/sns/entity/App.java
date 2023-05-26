@@ -1,4 +1,4 @@
-// 2023-05-26
+// 2023-05-26 week7
 package sns.entity;
 
 public class App {
