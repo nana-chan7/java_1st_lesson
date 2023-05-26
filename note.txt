@@ -101,3 +101,5 @@ public abstract メソッド名();
 public サブクラス extends 抽象クラス{
 
 }
+
+inherited : 実装

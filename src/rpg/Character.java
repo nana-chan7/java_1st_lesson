@@ -2,7 +2,9 @@
 // 2023-05-19 week6
 package rpg;
 
-public class Character {
+// public class Character {
+
+public class Character extends CharacterAbstract {
 
     // constructer
     public Character(String name, String job) {
@@ -52,8 +54,22 @@ public class Character {
         if(damage > 0) character.hp -= damage;
     }
 
+    // public void attack(Monster monster) {
+    //     int damage = this.attackPower - monster.defencePower;
+    //     if(damage > 0) monster.hp -= damage;
+    // }
+
+    @Override
     public void attack(Monster monster) {
         int damage = this.attackPower - monster.defencePower;
         if(damage > 0) monster.hp -= damage;
+    }
+
+    // abstract
+    @Override
+    public boolean isAlive() {
+        // TODO Auto-generated method stub
+        //throw new UnsupportedOperationException("Unimplemented method 'isAlive'");
+        return (this.hp > 0);
     }
 }
