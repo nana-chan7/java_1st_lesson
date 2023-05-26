@@ -6,7 +6,8 @@ import java.util.Map;
 
 public class MapApp {
     public static void main(String[] args) {
-        // Ctrl + . : クイックフィックス
+        
+        // Ctrl + . : Quick Fix (クイックフィックス)
         Map<String, String> drinkMap = new HashMap<>();
         drinkMap.put("D0001", "コーヒー");
         drinkMap.put("D0002", "紅茶");
@@ -33,6 +34,9 @@ public class MapApp {
         for (String value : drinkMap.values()) {
             System.out.println(value);            
         }
+
+        // データ削除
+        drinkMap.remove("D0002");
 
         System.out.println("-----繰り返し-----");
         // 繰り返し
