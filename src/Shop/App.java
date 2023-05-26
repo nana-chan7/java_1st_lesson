@@ -13,7 +13,6 @@ public class App {
         Drink drink2 = new Drink("紅茶", 400, 10);
         Drink drink3 = new Drink("ほうじ茶", 300, 50);
 
-
         drinkList.add(drink1);
         drinkList.add(drink2);
         drinkList.add(drink3);
