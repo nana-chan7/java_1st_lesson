@@ -68,7 +68,7 @@ public class Method {
     // public static int calculateTotalPrise(int price, int amount, Float taxRate){
     //     Float totalPrice = price * amount * (1 + taxRate);
     //     return totalPrice.intValue();
-    }
+    //}
 
 
     // ------- オーバーロード -------
@@ -84,3 +84,4 @@ public class Method {
         System.out.println(message);        
     }
 }
+
