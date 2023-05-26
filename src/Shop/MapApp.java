@@ -45,5 +45,21 @@ public class MapApp {
             System.out.println(key + ":" + name);            
         }
         
+        System.out.println("=============================");
+        Map<String, Drink> drinkMap2 = new HashMap<>();
+        drinkMap2.put("D0001", new Drink("コーヒー", 350, 100));
+        drinkMap2.put("D0002", new Drink("紅茶", 400, 10));
+        drinkMap2.put("D0003", new Drink("ほうじ茶", 30, 50));
+
+        Drink seleDrink = drinkMap2.get("D0001");
+        System.out.println(seleDrink.name);
+
+        System.out.println("-----合計金額-----");
+        // 合計金額
+        int totalPrice = 0;
+        for (Drink drink : drinkMap2.values()) {
+            totalPrice = drink.price * drink.stock;
+        }
+        System.out.println(totalPrice);
     }
 }
