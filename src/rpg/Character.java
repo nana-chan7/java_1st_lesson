@@ -6,7 +6,12 @@ package rpg;
 
 // public class Character extends CharacterAbstract {
 public class Character implements ICharacter {
-        // constructer
+    // 初期化ブロック
+    {
+        System.out.println("初期化ブロック");
+    }
+    
+    // constructer
     public Character(String name, String job) {
         this.name = name;
         this.job = job;
@@ -20,12 +25,6 @@ public class Character implements ICharacter {
         this.exp = 0;
     }
 
-
-    // 初期化ブロック
-    {
-        System.out.println("初期化ブロック");
-    }
-
     // field (property)
     public String name;
     public String job;
@@ -36,6 +35,7 @@ public class Character implements ICharacter {
     public int attackPower;
     public int defencePower;
     
+    // instance-method
     // class-method
     // ※ pub → public_method を選択
     public void walk(String direction) {
@@ -58,7 +58,6 @@ public class Character implements ICharacter {
     //     int damage = this.attackPower - monster.defencePower;
     //     if(damage > 0) monster.hp -= damage;
     // }
-
     @Override
     public void attack(Monster monster) {
         int damage = this.attackPower - monster.defencePower;

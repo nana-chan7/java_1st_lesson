@@ -30,33 +30,19 @@ for (String drink : drinks){
 }
 
 ・static メソッド
+自分で定義することも可能
 
+・インスタンス
+staticのつかないやつ
+public class Character{
+    
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+・コレクション型：
+ArrayList<データ型> 変数 = new ArrayList<>();
+ミュータブル
+インデックスを取得：get
+データを変える: set
 
 
 

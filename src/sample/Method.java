@@ -34,6 +34,7 @@ public class Method {
         greet("YSE", "晴れ");
     }
 
+    // python : def calculate(x):
     // public static method  
     // pub と入力 → public_static_method を選択
     public static Float calculate(Float x) {
