@@ -43,8 +43,9 @@ ArrayList<データ型> 変数 = new ArrayList<>();
 ミュータブル
 インデックスを取得：get
 データを変える: set
+ArrayList<String:key, String:value>
 
-
+・カプセル化
 
 
 抽象クラス
