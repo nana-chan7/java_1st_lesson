@@ -1,2 +1,51 @@
 ・論理演算
 ・比較演算子
+比較演算子    処理           判別
+    ==      A == B      A と B が等しい
+    !=      A != B      A と B が等しくない
+     >      A > B       A が B より大きい
+     <      A < B       A が B より小さい
+    >=      A >= B      A が B 以上
+    <=      A <= B      A が B 以下
+
+・同値
+String型とint型でデータ型が違う比較演算は、コンパイルエラー
+is_match = (Integer.parseInt(str1) == number1);
+
+・三項演算
+値 = (比較演算) ? true のときの値 : false のときの値
+message = (money >= price) ? "購入できます" : "購入できません";
+
+・オペランド
+
+・条件分岐
+・if文
+if ( 式 ){
+    実際の処理
+}
+
+
+else if () {}
+else {}
+
+・switch文
+違う条件で同じ処理の時
+switch (weekIndex) {
+    case Calender.
+}
+
+・Array : イミュータブルな配列
+一度データを決めてしまうとデータの増減はできない
+中身を更新することはできる
+
+String[] drinks = {1, 2, 3}
+
+・for文
+for (int i=1; i <=10 i++){
+    int num += i;
+}
+
+・foreach
+for (String drink : drinks){
+    System.out.println(drink);
+}

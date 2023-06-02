@@ -1,38 +1,30 @@
-・オペランド
-
-・条件分岐
-・if文
-if ( 式 ){
-    実際の処理
+・メソッドの定義
+修飾子 データ型 メソッド名(引数の型 変数名, ...){
+    処理
+    …
+    return 戻り値;
 }
-
-else if () {}
-else {}
-
-・switch文
-違う条件で同じ処理の時
-switch (weekIndex) {
-    case Calender.
+package sample;
+public class Method {
+    public static void main(String[] args) {
+    }
 }
+メインメソッドはstaticメソッド
 
-・Array : イミュータブルな配列
-一度データを決めてしまうとデータの増減はできない
-中身を更新することはできる
+・アクセス修飾子
+ 修飾子         アクセス
+public       すべてのクラス
+protected    現在のクラスとサブクラス
+private      現在のクラスと同じパッケージのクラス
+  なし        現在のクラスのみ
 
-String[] drinks = {1, 2, 3}
+・その他の修飾子
+修飾子      説明
+static   staticクラスやメソッド
+final    定数宣言
 
-・for文
-for (int i=1; i <=10 i++){
-    int num += i;
-}
-
-・foreach
-for (String drink : drinks){
-    System.out.println(drink);
-}
-
-・static メソッド
-自分で定義することも可能
+・static メソッド 
+自分で定義することも可能 カスタムメソッド
 
 ・インスタンス
 staticのつかないやつ

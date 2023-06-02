@@ -38,6 +38,19 @@ calender 機能
 → 引数を変えたいときに便利！
 over load : 過負荷(にする) / 過重積載(にする) / 過重負担(をかける)
 
+public static void main(String[] args) {
+    greet("東京 太郎");
+    greet("東京 太郎", "晴れ");
+}
+//引数が1つのメソッド
+static void greet(String name) {
+System.out.println(name + "さん、こんにちは!");
+}
+//引数が2つのメソッド
+static void greet(String name, String weather) {
+    System.out.println(name + "さん。今日天気は" + weather + "です。");
+}
+
 ・オブジェクト指向 : Object-orientation
 oop : オブジェクト指向プログラミング
 
