@@ -1,0 +1,19 @@
+抽象クラス
+プログラムを実装しないメソッドを1つ以上持つクラスのこと
+
+目的：継承関係でメソッドをオーバーライド
+
+
+抽象クラスはクラス名の前に abstract
+public abstract class クラス名();
+
+abstractメソッド
+抽象メソッドはメソッド前に abstract
+public abstract メソッド名();
+
+
+public サブクラス extends 抽象クラス{
+
+}
+
+抽象クラス

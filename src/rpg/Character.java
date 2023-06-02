@@ -2,7 +2,6 @@
 // 2023-05-19 week6
 // 2023-05-26 week7
 package rpg;
-
 // public class Character {
 
 // public class Character extends CharacterAbstract {
@@ -76,8 +75,11 @@ public class Character implements ICharacter {
 
     @Override
     public void magic(Monster monster, String key) {
-        // TODO Auto-generated method stub
-        //throw new UnsupportedOperationException("Unimplemented method 'magic'");
+
+    }
+    @Override
+    public void magic(Character character, String key) {
+
     }
 
     // abstract
