@@ -21,6 +21,6 @@ public class EquipApp {
         System.out.println("----- after -----");
         System.out.println("攻撃力：" + wizard1.attackPower);
         System.out.println("防御力：" + wizard1.defencePower);
-        // ※ 変数名は分かりやすいようにちゃんとつける！
+        // ※ 変数名は分かりやすいようにちゃんとつける！(日本語× 英単語)
     }   
 }
