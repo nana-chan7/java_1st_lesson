@@ -9,6 +9,7 @@ public class Item {
     private int defencePower;
 
     // 変数下の空白行を右クリック → ソースアクション → Generate:Getter Setter
+    // private なので外部にアクセスするために accessor method を使う
     // accessor method
     public String getName() { // getter
         return name;

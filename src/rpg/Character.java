@@ -4,6 +4,8 @@
 package rpg;
 // public class Character {
 
+import rpg.item.Item;
+
 // public class Character extends CharacterAbstract {
 public class Character implements ICharacter {
     // 初期化ブロック
@@ -81,11 +83,9 @@ public class Character implements ICharacter {
 
     }
 
-    // abstract
-    // @Override
-    // public boolean isAlive() {
-    //     // TODO Auto-generated method stub
-    //     //throw new UnsupportedOperationException("Unimplemented method 'isAlive'");
-    //     return (this.hp > 0);
-    // }
+    @Override
+    public void equip(Item item){
+        this.attackPower += item.getAttackPower();
+        this.defencePower += item.getDefencePower();
+    }
 }
