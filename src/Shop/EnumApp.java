@@ -20,5 +20,11 @@ public class EnumApp {
             System.out.println(size);
             System.out.println(size.getValue());
         }
+
+        System.out.println("----- valueOf() -----");
+        // 文字列で入力されたとき、
+        // ※ Sizeクラスの LARGEたちは文字列ではないので valueOf() を使って認識する
+        String sizeString = "LARGE";
+        System.out.println(Size.valueOf(sizeString));
     }
 }
