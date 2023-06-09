@@ -55,4 +55,21 @@ public class Order implements Calculatable {
         String message = "合計金額は" + totalPrice + "円です。";
         System.out.println(message);
     }
+
+    // 問題用紙
+    // public void confirm() {
+    //     System.out.println("注文は、");
+    //     for (Item item : list) {
+    //         System.out.println(item.getName());
+    //     }
+    //     String message = "合計金額は" + totalPrice + "円です。";
+    //     System.out.println(message);
+    // }
+
+    // public void pay(int money) {
+    //     String message = money + "円の支払いです。";
+    //     message += "お釣りは" + (money - totalPrice) + "円です。";
+    //     System.out.println(message);
+    // }
+    
 }

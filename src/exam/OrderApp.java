@@ -23,6 +23,9 @@ public static void main(String[] args) {
     order.calculateTotalPrice();
     order.pay();
     pay(order);
+
+    // 問題用紙
+    // order.pay(5000);
 }
 
 public static void pay(Order order) {
