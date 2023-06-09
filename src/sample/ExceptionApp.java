@@ -15,6 +15,7 @@ public class ExceptionApp {
     public static Float calculateAverage(int score, int count) {
         // return (float) score / (float)count;
 
+        // 0 の除算でエラーにならないために(とりあえず)if文で処理
         if (count == 0){
             System.out.println("count が 0 です");
             return 0.f;
