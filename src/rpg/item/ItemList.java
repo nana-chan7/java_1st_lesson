@@ -37,6 +37,13 @@ public class ItemList {
             System.out.println(line);
 
             // アイテムデータ読み込み (2行目以降)
+            while ((line = buffere.readLine()) != null) {  // 値が nullでなければ読み込み続ける
+                System.out.println(line);
+                // カンマ区切りで配列 (文字列)
+                String[] data = line.split(","); 
+
+                Long id = Long.parseLong(data[0]);  // 文字を Long型にキャスト
+            }
 
         } catch (FileNotFoundException e) {
             System.out.println(CSV_PATH + "が開けません");
