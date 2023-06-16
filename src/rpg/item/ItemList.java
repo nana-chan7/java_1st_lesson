@@ -14,7 +14,7 @@ import java.util.ArrayList;
 public class ItemList {
 
     private final String CSV_PATH = "data/item.csv";  // csvファイルを読み込む
-    ArrayList<Item> list = new ArrayList<>();
+    public ArrayList<Item> list = new ArrayList<>();  // ItemListApp がアクセスできるように publicにする
 
     public ItemList() {  // 空のコンストラクタを作成
         this.loadCSV();
