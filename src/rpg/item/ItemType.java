@@ -3,5 +3,5 @@
 package rpg.item;
 
 public enum ItemType {
-    WEPON, ARMOR, SHIELD
+    WEAPON, ARMOR, SHIELD
 }

@@ -7,7 +7,6 @@ import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
@@ -51,6 +50,7 @@ public class ItemList {
                 Integer defencePower = Integer.parseInt((data[5]));  
 
                 // アイテム生成
+                // Item item = new Item(name, price, attackPower, defencePower);
                 Item item = new Item(id, name, type, price, attackPower, defencePower);
                 // アイテムリストに追加
                 list.add(item);
