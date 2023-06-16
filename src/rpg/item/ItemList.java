@@ -45,12 +45,13 @@ public class ItemList {
 
                 Long id = Long.parseLong(data[0]);  // 文字列を Long型にキャスト
                 String name = data[1];  // ここは文字列のままなのでキャストしない
+                ItemType type = ItemType.valueOf((data[2].toUpperCase()));
                 Integer price = Integer.parseInt((data[3]));  // ←↓ 文字列を Integer型にキャスト 
                 Integer attackPower = Integer.parseInt((data[4]));  
                 Integer defencePower = Integer.parseInt((data[5]));  
 
                 // アイテム生成
-                Item item = new Item(name, price, attackPower, defencePower);
+                Item item = new Item(id, name, type, price, attackPower, defencePower);
                 // アイテムリストに追加
                 list.add(item);
             }
