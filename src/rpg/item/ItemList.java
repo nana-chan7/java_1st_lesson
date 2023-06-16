@@ -38,11 +38,21 @@ public class ItemList {
 
             // アイテムデータ読み込み (2行目以降)
             while ((line = buffere.readLine()) != null) {  // 値が nullでなければ読み込み続ける
-                System.out.println(line);
+                // System.out.println(line);
+
                 // カンマ区切りで配列 (文字列)
                 String[] data = line.split(","); 
 
-                Long id = Long.parseLong(data[0]);  // 文字を Long型にキャスト
+                Long id = Long.parseLong(data[0]);  // 文字列を Long型にキャスト
+                String name = data[1];  // ここは文字列のままなのでキャストしない
+                Integer price = Integer.parseInt((data[3]));  // ←↓ 文字列を Integer型にキャスト 
+                Integer attackPower = Integer.parseInt((data[4]));  
+                Integer defencePower = Integer.parseInt((data[5]));  
+
+                // アイテム生成
+                Item item = new Item(name, price, attackPower, defencePower);
+                // アイテムリストに追加
+                list.add(item);
             }
 
         } catch (FileNotFoundException e) {
@@ -53,3 +63,10 @@ public class ItemList {
         }  
     }
 }
+
+// <<< memo >>>
+// Long (長整数型) 変数は、-2,147,483,648 から 2,147,483,647 までの符号付き 32 ビット (4 バイト) 数として格納する
+
+// Integer (整数) 型は符号付き整数のバイナリ形式で格納され、通常、カウントや数量などの格納に使用される
+    // 整数データに対しては、算術演算および比較ソートは浮動小数点や 10 進数のデータよりも効率的に実行される 
+    // ただし、整数 (INTEGER) 型列は (2 31-1) を超えた絶対値を格納できない
