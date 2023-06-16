@@ -1,4 +1,4 @@
-// 2023-04-14 week1
+// 2023-04-14 1.week1
 public class App {
     public static void main(String[] args) throws Exception {
         System.out.println("Hello, World!"); // ← ダブルクォーテーション

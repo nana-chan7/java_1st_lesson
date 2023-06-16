@@ -1,4 +1,4 @@
-// 2023-04-28 week3
+// 2023-04-28 1.week3
 package sample;
 // 繰り返し処理
 public class ItemRepeat {

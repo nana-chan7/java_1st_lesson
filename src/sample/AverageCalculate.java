@@ -1,4 +1,4 @@
-// 2023-04-21 week2
+// 2023-04-21 1.week2
 package sample;
 
 import java.util.Scanner;

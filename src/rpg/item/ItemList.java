@@ -1,4 +1,4 @@
-// 2023-06-09 week9
+// 2023-06-09 1.week9
 // 2023-06-15 2.week1
 
 package rpg.item;
@@ -35,6 +35,8 @@ public class ItemList {
             buffere = new BufferedReader(reader);
             String line = buffere.readLine();  // 1行ずつ読み込む quick fix:Add catch clause to surrounding try
             System.out.println(line);
+
+            // アイテムデータ読み込み (2行目以降)
 
         } catch (FileNotFoundException e) {
             System.out.println(CSV_PATH + "が開けません");

@@ -1,5 +1,5 @@
-// 2023-05-26 week7
-// 2023-06-02 week8
+// 2023-05-26 1.week7
+// 2023-06-02 1.week8
 package rpg;
 
 import rpg.item.Item;

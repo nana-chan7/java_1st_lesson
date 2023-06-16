@@ -1,4 +1,4 @@
-// 2023-05-26 week7
+// 2023-05-26 1.week7
 package rpg;
 
 // abstract~ を選択

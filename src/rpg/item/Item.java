@@ -1,4 +1,4 @@
-// 2023-06-02 week8
+// 2023-06-02 1.week8
 package rpg.item;
 
 public class Item {
