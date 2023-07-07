@@ -12,7 +12,16 @@ public class TimerApp {
 
         Timer timer = new Timer(); // Timer: java.util
         TimerTask task = new TimerTask() { // Anonymous Inner Type
-        
+
+            @Override // Quick fix
+            public void run() {
+                System.out.println("実行しました！");
+                timer.cancel();
+            } 
         };
+        // ms (micro second)に変更
+        int ms = seconds * 1000;
+        // タイマー実行
+        timer.schedule(task, ms);
     }
 }
