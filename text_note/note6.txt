@@ -13,16 +13,20 @@
         メインスレッドから複数のスレッドを連続で開始でき各スレッドが終了するまでは待つ
         度の処理が終わるかわからない？
 
+プログラムが1つのスレッドで動作することを シングルスレッド といい、プログラムが並行処理で複数スレッドで動作することを マルチスレッド という
+
 ・Threadクラス: java.lang.Thread で利用
     Thresd(): Threadコンストラクタ
     start()
     run()
     join()
     sleep(long millis)
+    yield()
+    setName()
+    getName()
+    currentThread()
 
 
-
-    
 
 利用するには、Threadクラスを継承する方法と Runnableインターフェースを実装する方法がある
 ・Threadクラスの継承
