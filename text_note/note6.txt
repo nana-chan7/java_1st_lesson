@@ -32,6 +32,6 @@
 
 利用するには、Threadクラスを継承する方法と Runnableインターフェースを実装する方法がある
 ・Threadクラスの継承
-public class クラス名 extends zzzzthread{
+public class クラス名 extends Thread{
     pu
 }
