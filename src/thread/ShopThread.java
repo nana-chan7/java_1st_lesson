@@ -14,4 +14,7 @@ public class ShopThread extends CounterThread{
     public void run(){
         item.order();
     }
+
+    public void start() {
+    }
 }

@@ -10,14 +10,28 @@ public class OrderApp {
         items.add( new Item("紅茶"));
         items.add( new Item("ほうじ茶"));
 
-        for (Item item : items) {
+        // for (Item item : items) {
+        //     ShopThread thread = new ShopThread(item);
+        //     thread.start();
+        //     try {
+        //         thread.join(); //surround try&catch
+        //     } catch (InterruptedException e) {
+        //         e.printStackTrace();
+        //     }
+        // }
+
+        // 通常の foreach
+        System.out.println("--- normal ---");
+        for (Item item : items){
+            ShopThread thread = new ShopThread(item); 
+            thread.start();
+        }
+
+        // ラムダ式 lambda
+        System.out.println("--- lambd ---");
+        items.forEach(item -> {
             ShopThread thread = new ShopThread(item);
             thread.start();
-            try {
-                thread.join(); //surround try&catch
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
+        });
     }
 }
