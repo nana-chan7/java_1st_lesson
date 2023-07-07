@@ -12,7 +12,7 @@ public class Item {
     public void order(){
         try {
             System.out.println(name);
-            Thread.sleep(3000); // Thurround try&catch
+            Thread.sleep(1000); // Thurround try&catch
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

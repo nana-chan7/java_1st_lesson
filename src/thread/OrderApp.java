@@ -13,6 +13,11 @@ public class OrderApp {
         for (Item item : items) {
             ShopThread thread = new ShopThread(item);
             thread.start();
+            try {
+                thread.join(); //surround try&catch
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
     }
 }
