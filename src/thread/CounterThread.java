@@ -1,3 +1,4 @@
+// 2023-07-07 2.week4
 package thread;
 
 public class CounterThread implements Runnable{ // Add unimplemented methods
@@ -6,7 +7,7 @@ public class CounterThread implements Runnable{ // Add unimplemented methods
 
     @Override
     public void run() {
-
+        System.out.println("---End thread---");
     }
 
 }
