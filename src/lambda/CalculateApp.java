@@ -7,7 +7,8 @@ public class CalculateApp {
 
             @Override
             public Integer calculateWithoutTaxPrice(Integer price) {
-                return 0;
+                Float withoutPrice = price / 1.1f;
+                return withoutPrice.intValue();
             }
         };
         Integer withoutTaxPrice = calculate.calculateWithoutTaxPrice(1000);
