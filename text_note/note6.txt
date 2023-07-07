@@ -35,3 +35,7 @@
 public class クラス名 extends Thread{
     pu
 }
+
+
+
+ラムダ式
