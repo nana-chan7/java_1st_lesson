@@ -22,7 +22,7 @@
     start()
     run()
     join()
-    sleep(long millis)
+    sleep(long millis) :1秒=1000ミリ秒
     yield()
     setName()
     getName()

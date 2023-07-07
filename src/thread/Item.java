@@ -1,5 +1,4 @@
 // 2023-07-07 2.week4
-
 package thread;
 
 public class Item {
@@ -11,8 +10,12 @@ public class Item {
     }
 
     public void order(){
-        System.out.println(name);
-                System.out.println("--- 注文完了 ---");
-
+        try {
+            System.out.println(name);
+            Thread.sleep(3000); // Thurround try&catch
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        System.out.println("--- 注文完了 ---");
     }
 }
