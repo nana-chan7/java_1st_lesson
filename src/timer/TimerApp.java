@@ -19,6 +19,7 @@ public class TimerApp {
                 timer.cancel();
             } 
         };
+        
         // ms (micro second)に変更
         int ms = seconds * 1000;
         // タイマー実行
