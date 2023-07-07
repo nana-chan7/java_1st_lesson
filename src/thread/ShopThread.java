@@ -1,7 +1,7 @@
 // 2023-07-07 2.week4
 package thread;
 
-public class ShopThread extends Thread{
+public class ShopThread extends CounterThread{
 
     private Item item;
 
