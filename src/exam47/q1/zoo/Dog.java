@@ -5,13 +5,13 @@ package exam47.q1.zoo;
 import exam47.q1.food.Food;
 
 public class Dog extends Animal {
-    public Dog(String string){
-        String name = "タロー";
+    public Dog(String name){
+        // String name = "タロー";
         this.name = name;
     }
 
     public void eat(Food food){
-        Food food = new Food();
+        // Food food = new Food();
         String message = this.name + "は" + food.name + "を食べている";
         System.out.println(message);
 
