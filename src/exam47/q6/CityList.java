@@ -21,13 +21,22 @@ class CityList {
         while (place <= PLACE_MAX) {
             int next = 0;
             for (int digit = 9; digit >=0; digit--) {
+                // target: cities の index
+                // next: cities の index
                 for (int target = next; target < length; target++) {
+                    // Debug
+                    System.out.println(" --- getDigit --- : " + digit);
+                    String message = cities[target].getName() + "の人口/" + place + "の位:" + getDigit(target, place);
+                    System.out.println(message);
+
                     if (getDigit(target, place) == digit){
                         move(target, next);
                         next++;
                     }
                 }
             }
+            // 位を10倍する　Q10の説明
+            place *= BASE;
         }
     }
     private int getDigit(int target, int place) {
