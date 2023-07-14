@@ -12,8 +12,9 @@ class Purchase {
         if (isDoublePointDay(date.substring(8, 10))) {
             point *= 2;
         }
-        private boolean isDoublePointDay(String date){
-            return date.equals("10") || date.equals("20");
-        }
     }
+    private boolean isDoublePointDay(String date){
+        return date.equals("10") || date.equals("20");
+    }
+
 }

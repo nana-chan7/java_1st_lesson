@@ -12,7 +12,7 @@ public class Q7 {
             );
 
         PointHolder holder = new PointHolder(2019, 2);
-        fon (Purchase p : purchaseList) {
+        for (Purchase p : purchaseList) {
             holder.add(p);
         }
         holder. show();

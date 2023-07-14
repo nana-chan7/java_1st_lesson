@@ -15,7 +15,7 @@ public class PointHolder {
     }
 
     void add(Purchase purchase){
-        String expireYearMonth = getExpireYesrMonth(purchase.date);
+        String expireYearMonth = getExpireYearMonth(purchase.date);
         Integer point = expirePoint.get(expireYearMonth);
 
         if(point == null){ // Q35
@@ -27,6 +27,7 @@ public class PointHolder {
     private String getExpireYearMonth(String date){
         int year = Integer.parseInt((date.substring(0, 4)));
         int month = Integer.parseInt((date.substring(5, 7)));
+        int expireYear = getExpireYear(year, month);
         return expireYear + "年" + enrollmentMonth;
     }
     private int getExpireYear(int year, int month){
