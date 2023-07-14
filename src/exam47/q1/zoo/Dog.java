@@ -1,9 +1,11 @@
 // 2023-07-14 2.week5
 
-package exam47.zoo;
+package exam47.q1.zoo;
+
+import exam47.q1.food.Food;
 
 public class Dog extends Animal {
-    public Dog(){
+    public Dog(String string){
         String name = "タロー";
         this.name = name;
     }
@@ -23,4 +25,8 @@ public class Dog extends Animal {
         System.out.println(message);
     }
 
+    @Override
+    public void walk() {
+
+    }
 }

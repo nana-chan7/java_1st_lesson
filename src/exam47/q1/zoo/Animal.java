@@ -1,6 +1,6 @@
 // 2023-07-14 2.week5
 
-package exam47.zoo;
+package exam47.q1.zoo;
 
 public class Animal {
     public String name;
@@ -14,5 +14,8 @@ public class Animal {
     public static void greed(String message){
     System.out.println(message);
     }
+    
+    public void walk() {
 
+    }
 }

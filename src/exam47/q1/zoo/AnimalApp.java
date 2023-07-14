@@ -1,8 +1,8 @@
 // 2023-07-14 2.week5
 
-package exam47.zoo;
+package exam47.q1.zoo;
 
-import exam47.food.Food;
+import exam47.q1.food.Food;
 
 public class AnimalApp {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package exam47.food;
+package exam47.q1.food;
 
 public class Food {
     // public を外すとデフォルトのアクセス修飾子
