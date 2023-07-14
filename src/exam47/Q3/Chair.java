@@ -1,4 +1,4 @@
-package exam47.Q3;
+package exam47.q3;
 
 public class Chair extends Furniture {
     String color;

@@ -1,4 +1,4 @@
-package exam47.Q3;
+package exam47.q3;
 
 public class Q17_2 extends Q17 {
     void display() {

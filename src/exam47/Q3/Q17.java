@@ -1,4 +1,4 @@
-package exam47.Q3;
+package exam47.q3;
 
 public class Q17 {
     //member 変数
