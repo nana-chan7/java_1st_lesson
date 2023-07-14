@@ -25,8 +25,8 @@ public class PointHolder {
         expirePoint.put(expireYearMonth, nexPoint);
     }
     private String getExpireYearMonth(String date){
-        int year = Integer.parseInt((date.substring(0, 4)));
-        int month = Integer.parseInt((date.substring(5, 7)));
+        int year = Integer.parseInt(date.substring(0, 4));
+        int month = Integer.parseInt(date.substring(5, 7));
         int expireYear = getExpireYear(year, month);
         return expireYear + "年" + enrollmentMonth;
     }
