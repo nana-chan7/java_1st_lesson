@@ -1,19 +1,26 @@
 package exam47.q2;
 
-class Token implements {
+class Token implements Identifiable {
     // static変数
     static long number = 1;
     // インスタンス変数(フィールド, プロパティ)
     long num;
-    String attibute;
+    String attribute;
 
+    // デフォルトコンストラクタ
     Token(){
+        System.out.println("Constructor of Super Class");
         num = number;
         number = number + 1;
+        // number += 1;
     }
 
-    void setAttibute(String attibute) {
-        this.attibute = attibute;
+    void setAttribute(String attribute) {
+        this.attribute = attribute;
     }
 
+    @Override
+    public String getIdentifer() {
+        return attribute + "#" + num;
+    }
 }

@@ -1,5 +1,5 @@
 package exam47.q2;
 
-public class Identifiable {
-    
+interface Identifiable {
+    String getIdentifer(); 
 }
