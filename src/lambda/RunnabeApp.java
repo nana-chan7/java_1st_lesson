@@ -1,4 +1,5 @@
 package lambda;
+// lamda
 
 public class RunnabeApp {
     public static void main(String[] args) {

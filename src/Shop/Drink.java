@@ -1,6 +1,7 @@
 // 2023-05-19 1.week6
 // 2023-05-26 1.week7
-// 2023-06-09 1.week9
+// 2023-06-09 1.week9 :enum
+
 package shop;
 public class Drink {
     

@@ -1,4 +1,6 @@
 // 2023-06-09 1.week9
+// enum
+
 package shop;
 
 public class EnumApp {

@@ -1,4 +1,5 @@
 // 2023-06-09 1.week9
+// exception
 package sample;
 
 import java.io.BufferedReader;
@@ -63,7 +64,7 @@ public class FileLoadApp {
     public static void loadFile2(String path) 
         throws FileNotFoundException, IOException {  
         //↑: ↓ の後、throws FileNotFoundException の後ろに , IOException を追加
- 
+
         FileInputStream file = new FileInputStream(path);  // クイックフィックス: Add throws declaretion
         InputStreamReader reader = new InputStreamReader(file, "UTF-8");
         System.out.println("ファイルを開きました。");
